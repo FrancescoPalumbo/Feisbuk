@@ -1,0 +1,332 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-family: Arial;
+}
+
+.header-control{
+	background-color: #3A5896;
+	width: 100%;
+	height: : 80px;
+}
+
+.control-align{
+	width: 980px;
+	height: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-control{
+	float: left;
+}
+
+.img-control img{
+	width:150px;
+	height: 33px;
+	margin-top: 30px;
+}
+
+.login{
+	float: right;
+	font-size: 13px;
+	color: #fff;
+	margin-top: 16px;
+}
+
+.login p{
+	margin-left: 10px;
+}
+
+.input-txt{
+	width: 142px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+.btn{
+	background-color: #4267b2;
+	border-color: #29487d;
+	border-radius: 02px;
+	border-style: solid;
+	border-width: 1px;
+	color: #fff;
+	padding: 05px 05px 05px 05px;
+	margin-left: 05px;
+}
+
+.btn:hover {
+ 	background-color: #3A5896;
+}
+
+.login a{
+	color: #9cb4d8;
+	text-decoration: none;
+}
+
+.fb1 a{
+	color: #365899;
+	text-decoration: none;
+}
+
+#background-content{
+	background-color: #edf0f5;
+	width: 100%;
+  	height: 600px;
+}
+
+.content-control{
+	width: 980px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left{
+	float: left;
+	margin-top: 30px;
+	width: 400px;
+	font-size: 17px;
+	color: #0e385f;
+}
+
+.left h3{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 140%;
+}
+
+.left-btn{
+	margin-left: 89%;
+	margin-top: -10%;
+}
+
+.right{
+	display:inline-block;
+	width:399px;
+	float:right;
+}
+
+.ipt{
+	width: 180px;
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 0px;
+	border-radius: 05px;
+	border: none;
+	border: 1px solid #bdc7d8;
+	padding-left:  10px;
+	font-size: 20px;
+}
+
+.drop-down{
+	width: 60px;
+	height: 30px;
+  	display: inline-block;
+  	font-size: 13px;
+  	border: 1px solid #bdc7d8;
+  	border-radius: 5px;
+  	color:#141823;
+}
+
+.bolder {
+	color:#333;
+}
+
+.signup {
+	font-size:36px;
+	font-weight:700;
+	margin-bottom:10px;
+	margin-top: 25px;
+}
+
+.free {
+	font-size:19px;
+	margin-bottom:10px;
+}
+
+.formbox {
+	display: inline-block;
+	width:399px;
+}
+
+.fr {
+	float:right;
+}
+
+.in1 {
+	width:180px;
+}
+
+.in2 {
+	width:387px;
+}
+
+.inputbody {
+	display: inline-block;
+	font-size: 18px;
+	padding: 8px 10px;
+	border: 1px solid #bdc7d8;
+	border-radius: 5px;
+	color:#333;
+	margin-bottom:10px;
+}
+
+.bday {
+	margin-top: 20px;
+	
+ 	font-size:18px;
+  	color:#141823;
+  	margin-bottom:5px;
+}
+
+.h:hover {
+ 	text-decoration: underline;
+}
+
+.why {
+	font-size: 11px;
+	color: #3b5998;
+	width:150px;
+	margin-left:10px;
+	cursor:pointer;
+}
+
+.fb1 {
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.formbox {
+	display: inline-block;
+	width:399px;
+}
+
+.mt1 {
+	margin-top:15px;
+}
+
+.spanpad {
+	padding: 5px 0 5px 4px;
+	display: inline-block;
+}
+
+.m0 {
+ 	margin: 0;
+}
+
+.gender {
+	padding: 0 10px 0 3px;
+	margin-right: 1px;
+	line-height: 18px;
+}
+
+.agree {
+	font-size: 11px;
+	line-height: 140%;
+	color: #777;
+	width:316px;
+	margin: 11px 0 11px;
+}
+
+.signbut {
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color:#fff;
+	min-width: 194px;
+	padding: 7px 20px;
+	text-align: center;
+	border-radius: 5px;
+	background: #578843;
+	box-shadow: inset 0 1px 1px #a4e388;
+	border: 1px solid;
+	border-color: #3b6e22 #3b6e22 #2c5115;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	cursor:pointer;
+}
+
+.signbut:hover{
+	background: #67ae55;
+}
+
+.create {
+	border-top: 1px solid #dddfe2;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+
+.link {
+	color:#365899;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.footer{
+	width: 980px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+.left-footer{
+	float: left;
+	margin-top: 20px;
+	width: 400px;
+	font-size: 11px;
+	color: #737373;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 185%;
+    height: 140px;
+    font-size: 12px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    border-radius: 03px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    box-shadow: 1px 1px 10px #a4a4a4;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+    opacity: 0;
+}
+
+.tooltip .tooltiptext::after {
+    content:"";
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+.tooltiptext p{
+	line-height: 140%;
+}
