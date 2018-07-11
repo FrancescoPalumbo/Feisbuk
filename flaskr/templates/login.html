@@ -1,0 +1,220 @@
+<!--
+	Università: Parthenope
+	Dipartimento: Scienze e Tecnologie
+	Studente: Francesco Palumbo
+	Matricola: 0124/001441
+	Email istituzionale: francesco.palumbo004@studenti.uniparthenope.it
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Feisbuk: accedi o iscriviti</title>
+			<!-- <link rel="stylesheet" a href="../css/style.css"/>-->
+
+			<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+			<link rel="icon" href="../static/img/icon_fk.png"/>
+			<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="header-control">
+			<div class="control-align">
+				<div class="img-control">
+					<a href="#" title="Vai alla home di Feisbuk"><img src="../static/img/feisbuk.png"/></a>
+				</div>
+				<form method=POST action="{{ url_for('login')}}">
+					<div class="login">
+						<table>
+							<tr>
+								<td><p>E-mail o telefono</p></td>
+								<td><p>Password</p></td>
+							</tr>
+							<tr>
+								<td><input name="num_email" type="type" class="input-txt"/></td>
+								<td><input name="pass" type="password" class="input-txt"/></td>
+								<td><input type="submit" class="btn" value="Accedi"/></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><p><a href="#" class="link h">Non ricordi più come accedere all'account?</a></p></td>
+							</tr>
+						</table>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="background-content">
+			<div class="content-control">
+				<div class="left">
+					<h3>Feisbuk ti aiuta a connetterti e rimanere in contatto con le persone della tua vita.</h3>
+					<img src="../static/img/community.png"/>
+				</div>
+
+				<div class="right">
+					<div class="signup bolder">Iscriviti</div>
+        			<div class="free bolder">È gratis e lo sarà sempre.</div>
+        			<form method=POST action="{{ url_for('register')}}">
+				        <div class="formbox">
+				        	<input name="name" type="text" class="ipt in1" placeholder="Nome">
+				        	<input name="surname" type="text" class="ipt in1 fr" placeholder="Cognome">
+				        </div>
+				        <div class="formbox">
+				        <input name="num_email" type="text" class="ipt in2" placeholder="Numero di cellulare o indirizzo e-mail">
+				        </div>
+				        <div class="formbox">
+				        <input name="pass" type="password" class="ipt in2" placeholder="Nuova Password">
+				        </div>
+				        <div class="formbox">
+				          <div class="bday">Data di nascita</div>
+				        </div>
+				        <div class="formbox">
+				          <span data-type="selectors">
+				            	<select name="day" title="Giorno" class="drop-down">
+										<option value="0">Giorno</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6" selected="1">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+									<select name="month" title="Mese" class="drop-down">
+										<option value="0">Mese</option>
+										<option value="1">gen</option>
+										<option value="2">feb</option>
+										<option value="3">mar</option>
+										<option value="4">apr</option>
+										<option value="5">mag</option>
+										<option value="6">giu</option>
+										<option value="7" selected="1">lug</option>
+										<option value="8">ago</option>
+										<option value="9">set</option>
+										<option value="10">ott</option>
+										<option value="11">nov</option>
+										<option value="12">dic</option>
+									</select>
+									<select name="year" title="Anno" class="drop-down">
+										<option value="0">Anno</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+										<option value="2013">2013</option>
+										<option value="2012">2012</option>
+										<option value="2011">2011</option>
+										<option value="2010">2010</option>
+										<option value="2009">2009</option>
+										<option value="2008">2008</option>
+										<option value="2007">2007</option>
+										<option value="2006">2006</option>
+										<option value="2005">2005</option>
+										<option value="2004">2004</option>
+										<option value="2003">2003</option>
+										<option value="2002">2002</option>
+										<option value="2001">2001</option>
+										<option value="2000">2000</option>
+										<option value="1999">1999</option>
+										<option value="1998">1998</option>
+										<option value="1997" selected="1">1997</option>
+										<option value="1996">1996</option>
+										<option value="1995">1995</option>
+										<option value="1994">1994</option>
+										<option value="1993">1993</option>
+										<option value="1992">1992</option>
+										<option value="1991">1991</option>
+										<option value="1990">1990</option>
+										<option value="1989">1989</option>
+										<option value="1988">1988</option>
+										<option value="1987">1987</option>
+										<option value="1986">1986</option>
+										<option value="1985">1985</option>
+										<option value="1984">1984</option>
+										<option value="1983">1983</option>
+										<option value="1982">1982</option>
+										<option value="1981">1981</option>
+										<option value="1980">1980</option>
+									</select>
+				            </span>
+
+				            <div class="fb1 why h tooltip" onmouseover="myFun1()"><a href="#" title="Clicca per maggiori informazioni">Perché devo fornire la mia data di nascita?</a>
+				            	<div class="tooltiptext" id="myDIV">
+				            		<p><b>Indicando la tua data di nascita</b>, potrai vivere l'esperienza Feisbuk più adatta alla tua età. Se vuoi modificare il pubblico che visualizza questa informazione, accedi alla sezione Informazioni del tuo profilo. Per ulteriori dettagli, consulta la nostra 
+				            		<div class="link h">Normativa sui dati.</div></p>
+				            		<div class="create"><input type="button" class="btn left-btn" value="OK" onclick="myFun2()"/></div>
+								</div>
+							</div>
+						</div>
+
+				        <div class="formbox mt1">
+							<span data-type="radio" class="spanpad">
+				                <input type="radio" name="gen" value="F" class="gender" /> Donna
+				            </span>
+				            <span data-type="radio" class="spanpad">
+			 					<input type="radio" name="gen" value="M" class="gender" /> Uomo
+				            </span>
+				        </div>
+				   
+				            
+				        <div class="formbox">
+				        	<div class="agree">
+				                Cliccando su Iscriviti, accetti le nostre <div class="link h">Condizioni</div> Scopri in che modo raccogliamo, usiamo e condividiamo i tuoi dati nella nostra <div class="link h">Normativa sui dati</div>, e in che modo usiamo cookie e tecnologie simili nella nostra <div class="link h">Normativa sui cookie</div> Potresti ricevere notifiche tramite SMS da noi, ma puoi disattivarle in qualsiasi momento.
+				            </div>  
+				        </div>
+				        <div class="formbox">
+				            <button type="submit" class="signbut bolder">Iscriviti</button>
+				        </div>
+			    	</form>
+			        <div class="formbox">
+			        	<div class="create"><div class="link h">Crea una Pagina</div> per un personaggio famoso, una band o un'azienda.</div>
+			        </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="left-footer">
+				<p>Feisbuk - Palumbo © 2018</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var x = document.getElementById('myDIV');
+
+			function myFun2() {
+				x.style.display = 'none';
+			}
+
+			function myFun1(){
+				x.style.display = 'block';
+			}
+		</script>
+	</body>
+</html>

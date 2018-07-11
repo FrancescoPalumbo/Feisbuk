@@ -1,0 +1,212 @@
+<!--
+	Università: Parthenope
+	Dipartimento: Scienze e Tecnologie
+	Studente: Francesco Palumbo
+	Matricola: 0124/001441
+	Email istituzionale: francesco.palumbo004@studenti.uniparthenope.it
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Feisbuk</title>
+		<meta charset="UTF-8">
+		<!-- <link rel="stylesheet" a href="../css/style_home.css"/> -->
+
+		<link href="{{ url_for('static', filename='css/style_home.css') }}" rel="stylesheet">
+
+		<link rel="icon" href="../static/img/icon_fk.png"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="header-control">
+			<div class="control-align">
+				<div class="img-control">
+					<a href="#"><img src="../static/img/iconW_fk.png"/></a>
+				</div>
+				<div class="box-search">
+					<input type="text" class="ipt" placeholder="Cerca" />
+					<img src="../static/img/search.png" id="input_img"/>
+					
+				</div>
+	
+			<div class="content-button-top">
+				<table>
+					<tr>
+						<td class="profile"><button type="button" class="btn" title="Profilo"><img src="../static/img/icon_man.png"/><p class="text-p"> {{name}} </p></button><p class="text-p space">|</p></td>
+						<td class="button-top"><button type="button" class="btn" onclick="location.href='#'"><p class="text-p">Home</p></button><p class="text-p space">|</p></td>
+						<td class="button-top"><button type="button" class="btn"><p class="text-p">Trova amici</p></button></td>
+						<td class="icon-top"><a href="#"><i class="fas fa-user-friends"></i></a></td>
+						<td class="icon-top"><a href="#"><i class="fab fa-facebook-messenger"></i></a></td>
+						<td class="icon-top"><a href="#"><i class="fas fa-globe"></i></a></td>
+						<td class="button-top"><p class="text-p space">|</p></td>
+						<td class="icon-top"><a href="#"><i class="fas fa-question-circle"></i></a></td>
+						<form method=POST action="{{ url_for('logout')}}">
+							<td class="icon-top"><button type="submit" class="btn" title="logout"><i class="fas fa-caret-down"></i></button></td>
+						</form>
+					</tr>
+				</table>
+			</div>
+				
+			</div>
+		</div>
+
+		<div id="background-content">
+			<div class="content-control">
+				<table>
+					<tr>
+						<td class="left profile" style="position:fixed;">
+							<div class="left">
+								<button type="button" class="btn-left" title="{{name}} {{surname}}"><img src="../static/img/icon_man.png"/"><p class="text-p-left">{{name}} {{surname}}</p></button>
+							</div>
+							<div class="left">
+								<button type="button" class="btn-left-principal" title="Notizie" onclick="location.href='#'"><img src="../static/img/news.png"/><p class="text-p-left"><b>Notizie</b></p></button><br>
+								<button type="button" class="btn-left" title="MessagesBuk"><img src="../static/img/messagesbuk.png"/><p class="text-p-left">MessagesBuk</p></button>
+								<button type="button" class="btn-left" title="Marketplace"><img src="../static/img/marketplace.png"/><p class="text-p-left">Marketplace</p></button>
+							</div>
+							<div class="left">
+								<p class="text-p-left2"><b>Esplora</b></p>
+								<button type="button" class="btn-left" title="Gruppi"><img src="../static/img/team.png"/><p class="text-p-left">Gruppi</p></button>
+								<button type="button" class="btn-left" title="Eventi"><img src="../static/img/calendar.png"/><p class="text-p-left">Eventi</p></button>
+								<button type="button" class="btn-left" title="Pagine"><img src="../static/img/pages.png"/><p class="text-p-left">Pagine</p></button>
+								<button type="button" class="btn-left" title="Accadde oggi"><img src="../static/img/today.png"/><p class="text-p-left">Accadde oggi</p></button>
+								<button type="button" class="btn-left" title="Elementi salvati"><img src="../static/img/bookmark.png"/><p class="text-p-left">Elementi salvati</p></button>
+								<button type="button" class="btn-left" title="Giochi"><img src="../static/img/game.png"/><p class="text-p-left">Giochi</p></button>
+								<button type="button" class="btn-left" title="Meteo"><img src="../static/img/meteo.png"/><p class="text-p-left">Meteo</p></button>
+								<br><a href="#"><img src="../static/img/down.png"/><p class="text-p-left link h">Altro...</p></a>
+							</div>
+							<div class="left">
+								<p><b class="text-p-left2">Crea</b><br>
+									<p class="link h">Inserzione</p> • <p class="link h">Pagina</p> • <p class="link h">Gruppo</p> • <p class="link h">Evento</p> • <p class="link h">Raccolta fondi</p>
+								</p>							
+							</div>
+
+						</td>
+						<td class="center">
+							<div class="post-top">
+								<table id="table-post">
+									<tr>
+										<td class="space-btn"><i class="fas fa-pencil-alt"></i><p class="link">&nbsp;Crea un post</p><b id="table-space">|</b> <i class="fas fa-book"></i> <p  class="link">&nbsp;Album con foto o video </p><b id="table-space">|</b> <i class="fas fa-video"></i> <p class="link">&nbsp;Video in diretta</p></td>
+									</tr>
+									<tr>
+										<td class="post-img"><a href="#"><img src="../static/img/icon_man.png"/></a><p class="text-p-post"><input type="text" class="ipt2" placeholder="A cosa stai pensando {{name}}?" title="A cosa stai pensando {{name}}?" /></p></td>
+									</tr>
+									<tr>
+										<td class="space-btn">
+											<button type="button" class="post-btn post-btn-design"><img src="../static/img/album.png"/><p class="text-p-left">Foto/Video</p></button><button type="button" class="post-btn post-btn-design"><img src="../static/img/smile.png"/><p class="text-p-left">Stato d'animo/attività</p></button></button><button type="button" class="post-btn post-btn-design"><p class="text-p-left"><i class="fas fa-ellipsis-h"></i></p>
+											</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="wrap">
+								<div class="newPost1 into-post">
+									<a href="#"><img id="into-post-img" src="../static/img/James-Gosling.jpg"/></a>
+									<table style="padding: 6px 10px 10px 0px; ">
+										<tr style="float: left;">
+											<td class="into-post">
+												<p class="text-p-right link h">
+													<b>James Gosling</b>
+												</p>
+											</td>
+										</tr>
+										<tr style="margin-top: -10px;">
+											<td class="into-post">
+												<p class="text-p-right" style="color: #81858d;">3 h • <i class="fas fa-user-friends"></i>
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table>
+										<tr style="margin-top: 100px;">
+											<td>
+												<p class="into-text">
+													I went to the March For Our Lives today in Redwood City. It was so wonderful to be among people united in hope for positive change. It’s so hard to face the news these days, it’s nice to see something Good. Votes are supposed to count more than cash.
+													<br>
+													<img id="post-img" src="../static/img/James-Gosling-post.jpg"/>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td class="like-comment">
+												<button type="button" class="btn-like-comment">
+													<p><i class="fas fa-thumbs-up"></i> Mi piace
+													</p>
+												</button>
+											</td>
+											<td class="like-comment">
+												<button type="button" class="btn-like-comment">
+													<p><i class="fas fa-comment-alt"></i> Commenta
+													</p>
+												</button>
+											</td>
+											<td class="like-comment">
+												<button type="button" class="btn-like-comment">
+													<p><i class="fas fa-share"></i> Condividi
+													</p>
+												</button>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</td>
+						<td class="right">
+							<div class="stories">
+								<table>
+									<tr>
+										<td>
+											<p class="text-p-left2"><b>Stories</b><br>
+										</td>
+									</tr>
+									<tr>
+										<td class="stories-img">
+											<button type="button" class="btn-stories"><a href="#"><img src="../static/img/kevin-mitnick.jpg"/></a><p class="text-p-right link h"><b>Kevin Mitnick</b></p><br><p class="text-p-right">17 minuti fa</p></button>
+										</td>
+									</tr>
+									<tr>
+										<td class="stories-img">
+											<button type="button" class="btn-stories"><a href="#"><img src="../static/img/Tim-Berners.jpg"/></a><p class="text-p-right link h"><b>Tim Berners-Lee</b></p><br><p class="text-p-right">24 minuti fa</p></button>
+										</td>
+									</tr>
+									<tr>
+										<td class="stories-img">
+											<button type="button" class="btn-stories"><a href="#"><img src="../static/img/steve-wozniak.jpg"/></a><p class="text-p-right link h"><b>Steve Wozniak</b></p><br><p class="text-p-right">49 minuti fa</p></button>
+										</td>
+									</tr>
+									<tr>
+									</tr>
+								</table>
+							</div>
+							<div class="other-right">
+								<table>
+									<tr>
+										<td>
+											<img src="../static/img/calendar.png"/><p class="text-p-left2 link h"><b>1 invito a un evento</b></p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="../static/img/gift.png"/><p class="text-p-left2">Oggi è il compleanno di <b class="link h">Donald Trump</b></p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<br><p class="text-p-left2">Feisbuk - Palumbo © 2018</p>
+										</td>
+									</tr>
+								</table>
+								
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	<!--<script type="text/javascript" src="../static/script/function-scroll.js"></script>-->
+	<script src="{{ url_for('static', filename='script/function-scroll.js') }}"></script>
+
+	</body>
+</html>
